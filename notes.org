@@ -1,0 +1,212 @@
+#+title: Notes from Data Science specialisation at coursera
+
+
+* Data Science Toolbox
+
+  All parts of the course is done, just that since I did not correct another
+  student, I will get a large reduction.
+
+** DONE Video Lectures
+   CLOSED: [2014-10-07 Tue 22:31]
+   :LOGBOOK:
+   - State "DONE"       from ""           [2014-10-07 Tue 22:31]
+   :END:
+
+   I did not watch any, but managed the Quizzes.
+
+** DONE Quizzes
+   CLOSED: [2014-10-07 Tue 22:31]
+   :LOGBOOK:
+   - State "DONE"       from ""           [2014-10-07 Tue 22:31]
+   :END:
+
+   No notes
+
+** DONE Course Project
+   CLOSED: [2014-10-07 Tue 22:31]
+   :LOGBOOK:
+   - State "DONE"       from ""           [2014-10-07 Tue 22:31]
+   :END:
+
+   The project is to
+
+   1. Install R Studio (done)
+   2. Get a Git hub account: [[https://github.com/gustaveek/datasciencecoursera]]
+   3. Push some Markdown to the account
+   4. Fork another repository
+
+* R Programming
+
+  [[https://class.coursera.org/rprog-007]]
+
+** DONE Video Lectures
+   CLOSED: [2014-10-07 Tue 22:37]
+   :LOGBOOK:
+   - State "DONE"       from ""           [2014-10-07 Tue 22:37]
+   :END:
+   
+*** CANCELLED Background Material (did not do)                    :CANCELLED:
+    CLOSED: [2014-10-07 Tue 22:32]
+    :LOGBOOK:
+    - State "CANCELLED"  from "DONE"       [2014-10-07 Tue 22:32] \\
+      Not needed
+    - State "DONE"       from ""           [2014-10-07 Tue 22:32]
+    :END:
+*** DONE Week 1
+    CLOSED: [2014-10-07 Tue 22:33]
+    :LOGBOOK:
+    - State "DONE"       from ""           [2014-10-07 Tue 22:33]
+    :END:
+
+    | Lecture                                   | Interest | For Quiz |     |
+    |-------------------------------------------+----------+----------+-----|
+    | Introduction                              | -        | ?        |     |
+    | Use R version 3.1.1                       | -        | ?        |     |
+    | Overview and History of R [16:07]         | -        | ?        |     |
+    | Getting Help [13:53]                      | -        | ?        |     |
+    | Data Types (part 1) [9:26]                | Somewhat | ?        |     |
+    | Data Types (part 2) [9:45]                | Somewhat | ?        |     |
+    | Data Types (part 3) [11:51]               | Somewhat | ?        |     |
+    | Subsetting (part 1) [7:01]                | Somewhat | ?        |     |
+    | Subsetting (part 2) [10:18]               | Somewhat | ?        |     |
+    | Reading and Writing Data (part 1) [12:55] | -        | ?        | (1) |
+    | Reading and Writing Data (part 2) [9:30]  | -        | ?        | (2) |
+    | Introduction to swirl                     |          | ?        |     |
+
+    (1) List of various functions for reading: /read.table/ -- tabular data,
+    /read.csv/ -- tabular data, /readLines/ -- text, /source/ -- R code, /dget/
+    -- R code, /load/ -- saved workspaces, /unserialize/ -- singe binary R
+    object. To compare with the writing counterparts: /write.table/ -- tabular
+    data, /writeLines/ -- text, /dump/ -- R code, /dput/ -- R code, /save/ --
+    workspaces, /serialize/ -- binary object.
+
+    Read the help page for read.table when large data sets will be handled. Tip
+    is to specify colClasses:
+
+    : f <- "datatable.tt"
+    : d <- read.table(f, colClasses = sapply(read.table(f, nrows= 100), class))
+
+    (2) Interesting is the example that reads from a URL as if it was a file.
+
+*** DONE Week 2
+    CLOSED: [2014-10-07 Tue 22:33]
+    :LOGBOOK:
+    - State "DONE"       from ""           [2014-10-07 Tue 22:33]
+    :END:
+
+    | Lecture                            | Interest | For Quiz |   |
+    |------------------------------------+----------+----------+---|
+    | Control Structures (part 1) [7:10] | -        |          |   |
+    | Control Structures (part 2) [8:11] | -        |          |   |
+    | Functions (part 1) [9:17]          | -        |          |   |
+    | Functions (part 2) [7:13]          | -        |          |   |
+    | Your First R Function [10:29]      | -        |          |   |
+    | Coding Standards [8:59]            | No       |          |   |
+    | Scoping Rules (part 1) [10:32]     | -        |          |   |
+    | Scoping Rules (part 2) [8:34]      | -        |          |   |
+    | Vectorized Operations [3:46]       | May be   |          |   |
+    | Dates and Times [10:29]            | -        |          |   |
+
+*** DONE Week 3
+    CLOSED: [2014-10-07 Tue 22:34]
+    :LOGBOOK:
+    - State "DONE"       from ""           [2014-10-07 Tue 22:34]
+    :END:
+
+    | Lecture                          | Interest | For Quiz |     |
+    |----------------------------------+----------+----------+-----|
+    | lapply [9:23]                    | May be   |          |     |
+    | apply [7:21]                     | May be   |          |     |
+    | tapply [3:17]                    | May be   |          |     |
+    | split [9:09]                     | May be   |          |     |
+    | mapply [4:46]                    | May be   |          |     |
+    | Debugging Tools (part 1) [12:33] | May be   |          | (1) |
+    | Debugging Tools (part 2) [6:25]  | May be   |          |     |
+    | Debugging Tools (part 3) [8:21]  | May be   |          |     |
+
+    (1) Debugging tools would really be useful to watch again; read help for /debug/
+
+*** DONE Week 4
+    CLOSED: [2014-10-07 Tue 22:34]
+    :LOGBOOK:
+    - State "DONE"       from ""           [2014-10-07 Tue 22:34]
+    :END:
+
+    | Lecture                       | Interest | For Quiz |     |
+    |-------------------------------+----------+----------+-----|
+    | The str Function [6:08]       | Yes      |          |     |
+    | Simulation (part 1) [7:47]    | Yes      |          |     |
+    | Simulation (part 2) [7:02]    | Yes      |          | (1) |
+    | R Profiler (part 1) [10:39]   | Yes      |          |     |
+    | R Profiler (part 2) [10:26]   | Yes      |          |     |
+    | Scoping Rules (part 3) [9:21] | Yes      |          | (2) |
+
+    (1) The Poisson simulation example was complicated; get back to the math
+    behind that. (2) Lexical scoping, optimisation and statistical computing is
+    interesting, important and hard: revisit.
+    
+    Some example of usage of /str/
+
+    #+begin_example
+    str(c(1, 2, 4.9))
+    str(list(a = gl(3, 5), b = rnorm(100, 3, 4)))
+    library(datasets)
+    str(iris)
+    summary(iris)
+    library(data.table)
+    str(data.table(iris))
+    #+end_example
+
+    Function variations for probability distribution functions: /r/ -- random
+    number generation, /d/ -- density, /p/ -- cumulative distribution, and /c/
+    -- quantiles. Distributions that I have seen: /norm/ -- normal, /pois/ --
+    poison, /binom/ -- binomial, /exp/ -- exponential, /gama/ -- gama.
+
+    Sampling was fun:
+
+    : sample(0:9) # permutation
+    : sample(0:9, 4)
+    : sample(0:9, 4, replace = TRUE)
+    : paste (sample(c(letters, 0:9), 10, replace = TRUE), collapse = "")
+
+    *R Profiler.* Knuth was cited. /system.time/ is useful. Note that arguments
+    to /system.time/ can be complex expressions wrapped in curly braces.
+
+** DONE Quizzes
+   CLOSED: [2014-10-07 Tue 22:37]
+   :LOGBOOK:
+   - State "DONE"       from ""           [2014-10-07 Tue 22:37]
+   :END:
+
+   - [X] Week 1 ([[file:02-rprog/q1.r][q1.r]])
+   - [X] Week 2
+   - [X] Week 3 The code disappeared
+   - [X] Week 4 ([[file:02-rprog/q4.r][q4.r]])
+
+** Programming Assignments
+
+*** swirl
+*** 1. Air Pollution
+*** 3. Hospital Quality
+*** 2. Peer Assessments
+
+* Getting and Cleaning Data
+  
+** Video Lectures
+
+   *Week 1*
+
+   | Lecture                          | Interest  | For Quiz  |     |
+   |----------------------------------+-----------+-----------+-----|
+   | Obtaining Data Motivation (5:38) | Last 30'' | No        |     |
+   | Raw and Processed Data (7:07)    | No        | No        |     |
+   | Components of Tidy Data (9:25)   | Yes       | No        |     |
+   | Downloading Files (7:09)         | No        | Yes       |     |
+   | Reading Local Files (4:55)       | Somewhat  | Yes       |     |
+   | Reading Excel Files (3:55)       | No        | Yes       | (1) |
+   | Reading XML (12:39)              | No        | Yes twice | (2) |
+   | Reading JSON (5:03)              | Somewhat  | No        | (3) |
+   | The data.table Package (11:18)   | Yes very  | No        | (4) |
+
+   (1) Interesting for the future (2) XML is cool!  (3) Contains
+   misconception between data.frame and list (4) Dense
